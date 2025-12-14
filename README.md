@@ -29,16 +29,16 @@
 - PortAudio/PyAudio драйвери. Якщо pip install pyaudio не спрацьовує на Windows, встановіть попередньо зібрану версію (наприклад, через pip install pipwin && pipwin install pyaudio).
 
 ## Установка
-`Bash
+```bash
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
-`
+```
 
 ## Запуск
-`Bash
+```bash
 python main.py
-`
+```
 
 ## Використання
 - **Speech -> Text**: оберіть мову, у списку мікрофонів натисніть Refresh (якщо треба), запустіть запис Start, завершіть Stop. Розпізнаний текст з'являється в полі та додається до історії; кнопку Copy використовуйте для буфера обміну.
@@ -57,9 +57,9 @@ python main.py
 
 ## Збірка .exe
 Запускайте з активованого віртуального середовища з установленими залежностями:
-`bash
+```bash
 pyinstaller --clean --noconfirm main.spec
-`
+```
 main.spec вмикає іконку icon.ico. Готовий білд з'явиться у каталозі dist (поруч будуть потрібні бібліотеки). Щоб зберегти налаштування, залишайте config.json поряд із виконуваним файлом.
 
 ## Обмеження та підказки
